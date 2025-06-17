@@ -7,14 +7,14 @@ edition = "2021"
 async-trait = { version = "0.1.57", optional = true }
 codec = { workspace = true, default-features = false }
 scale-info = { workspace = true, default-features = false, features = ["derive"] }
-sp-api.default-features = false
-sp-application-crypto.default-features = false
-sp-consensus-slots.default-features = false
-sp-inherents.default-features = false
-sp-runtime.default-features = false
-sp-std.default-features = false
-sp-timestamp.default-features = false
-sp-core.default-features = false
+sp-api = { workspace = true,  default-features = false }
+sp-application-crypto = { workspace = true,  default-features = false }
+sp-consensus-slots = { workspace = true,  default-features = false }
+sp-inherents = { workspace = true,  default-features = false }
+sp-runtime = { workspace = true,  default-features = false }
+sp-std = { workspace = true,  default-features = false }
+sp-timestamp = { workspace = true,  default-features = false }
+sp-core = { workspace = true,  default-features = false }
 
 [features]
 default = ["std"]

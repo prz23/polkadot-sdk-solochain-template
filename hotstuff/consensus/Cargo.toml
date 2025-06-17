@@ -6,8 +6,8 @@ edition = "2021"
 [dependencies]
 log = { version = "0.4" }
 scale-info = { workspace = true, default-features = false, features = ["derive"] }
-serde = { workspace = true, features = ["derive"] }
-parity-scale-codec = { workspace = true, features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+parity-scale-codec = { workspace = true, features = ["derive"], package = "codec" }
 async-recursion = "1.0.0"
 array-bytes = "6.1"
 futures.workspace = true
@@ -33,7 +33,7 @@ sp-inherents.workspace = true
 sp-core.workspace = true
 sp-application-crypto.workspace = true
 sp-keyring.workspace = true
-sp-consensus.default-features = false
+sp-consensus = { workspace = true,  default-features = false }
 sp-api.workspace = true
 sp-runtime.workspace = true
 sp-keystore.workspace = true
@@ -44,8 +44,8 @@ tempfile = "3.8.0"
 
 sc-keystore.workspace = true
 sc-transaction-pool.workspace = true
-sc-network-test.workspace = true
+#sc-network-test.workspace = true
 sp-tracing.workspace = true
-substrate-test-runtime-client.workspace = true
-substrate-test-runtime.workspace = true
+#substrate-test-runtime-client.workspace = true
+#substrate-test-runtime.workspace = true
 
