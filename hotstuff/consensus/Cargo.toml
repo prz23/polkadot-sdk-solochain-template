@@ -5,47 +5,47 @@ edition = "2021"
 
 [dependencies]
 log = { version = "0.4" }
-scale-info = { version = "2.10.0", default-features = false, features = ["derive"] }
-serde = { version = "1.0", features = ["derive"] }
-parity-scale-codec = { version = "3.6.1", features = ["derive"] }
+scale-info = { workspace = true, default-features = false, features = ["derive"] }
+serde = { workspace = true, features = ["derive"] }
+parity-scale-codec = { workspace = true, features = ["derive"] }
 async-recursion = "1.0.0"
 array-bytes = "6.1"
-futures = "0.3.21"
+futures.workspace = true
 tokio = { version = "1.22.0", features = ["rt", "time", "macros", "sync"] }
 async-trait = "0.1.57"
 parking_lot = "0.12.1"
 
-sc-basic-authorship = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-utils = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-telemetry = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-client-api = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-consensus = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-consensus-slots = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-network = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-network-gossip = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-chain-spec = {  git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-service = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-network-sync = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+sc-basic-authorship.workspace = true
+sc-utils.workspace = true
+sc-telemetry.workspace = true
+sc-client-api.workspace = true
+sc-consensus.workspace = true
+sc-consensus-slots.workspace = true
+sc-network.workspace = true
+sc-network-gossip.workspace = true
+sc-chain-spec.workspace = true
+sc-service.workspace = true
+sc-network-sync.workspace = true
 
 
-sp-blockchain = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sp-inherents = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sp-core = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sp-application-crypto = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sp-keyring = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sp-consensus = { default-features = false, git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sp-api = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sp-runtime = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sp-keystore = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+sp-blockchain.workspace = true
+sp-inherents.workspace = true
+sp-core.workspace = true
+sp-application-crypto.workspace = true
+sp-keyring.workspace = true
+sp-consensus.default-features = false
+sp-api.workspace = true
+sp-runtime.workspace = true
+sp-keystore.workspace = true
 hotstuff-primitives = { path="../primitives" }
 
 [dev-dependencies]
 tempfile = "3.8.0"
 
-sc-keystore = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-transaction-pool = {  git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sc-network-test = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-sp-tracing = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-substrate-test-runtime-client = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
-substrate-test-runtime = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+sc-keystore.workspace = true
+sc-transaction-pool.workspace = true
+sc-network-test.workspace = true
+sp-tracing.workspace = true
+substrate-test-runtime-client.workspace = true
+substrate-test-runtime.workspace = true
 
